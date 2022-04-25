@@ -1,0 +1,57 @@
+body{
+		margin: 0;
+		padding: 0;
+	}
+		.kotak1{
+			width: 100px;
+			height: 100px;
+			background-color: salmon;
+			transition: 3s ease;
+			text-align: center;
+			line-height: 100px;
+		}
+		.kotak1:hover{
+			width: 500px;
+		}
+
+		.kotak2{
+			width: 100px;
+			height: 100px;
+			background-color: salmon;
+			transition: 3s ease;
+			text-align: center;
+			line-height: 100px;
+			margin: 10px 0;
+		}
+		.kotak2:hover{
+			animation: animasiKotak 2s ease;
+		}
+
+		.kotak3{
+			width: 100px;
+			height: 100px;
+			background-color: salmon;
+			transition: 3s ease;
+			text-align: center;
+			line-height: 100px;
+			margin: 10px 0;
+			animation: animasiKotak 2s ease infinite alternate-reverse forwards;/*infinite untuk melakukan
+			pengulangan berkali kali, jika hanya ingin melakukan pengulangan 2 kali
+			atau 3 kali bisa di tulis dengan angka . (dan normal, reverse, alternate, alternate-reverse)
+			(forwards, backwards, both, none) */
+		}
+
+		@keyframes animasiKotak{
+			0%{
+				width: 100px;
+			}
+			50%{
+				width: 500px;
+				height: 100px;
+			}
+			100%{
+				width: 500px;
+				height: 500px;
+			}
+
+		}

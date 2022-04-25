@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dom Selection</title>
+  <style>
+    * { 
+        border: 2px solid #dedede; 
+        padding: 15px; 
+        margin: 15px; 
+    }
+    html { 
+      margin: 0;
+      padding: 0;
+    }
+    body { 
+      max-width: 600px;
+      margin: 30px auto;
+      font-family: sans-serif;
+      color: #333;
+    }
+    .biru-muda{
+      background-color: lightblue;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="judul">Hello World</h1>
+  <div id="container">
+      <section id="a">
+          <p class="p1">paragraf 1</p>
+          <a href="http://instagram.com/sandhikagalih">Instagram Sandhika Galih</a>
+          <p class="p2">paragraf 2</p>
+          <p class="p3">paragraf 3</p>
+          <button>Lets go</button>
+      </section>
+      <section id="b">
+          <p>paragraf 4</p>
+          <ul>
+              <li>item 1</li>
+              <li>item 2</li>
+              <li>item 3</li>
+          </ul>
+      </section>
+  </div>
+
+<script>
+// MANIPULASI ELEMENT
+
+    // const judul = document.getElementById('judul');
+    // judul.innerHTML='<em>qbotsista</em>';
+
+    // const sectionA= document.querySelector('section#a');
+    // sectionA.innerHTML= 'Hello world';
+
+    // const judul=document.querySelector('#judul');
+    // judul.style.color='lightblue';
+
+    // SET ATRIBUT -> MENAMBAH ATRIBUT
+    // const judul = document.getElementsByTagName('h1')[0];
+    // judul.setAttribute('name', 'judul'); // menambah atribute name='judul'
+
+    // const a = document.querySelector('section#a a');
+    // a.setAttribute('id', 'link'); // menambah atribute id='link'
+
+    // REMOVE ATRIBUTE
+    // const a = document.querySelector('section#a a');
+    // a.removeAttribute('href'); // menghapus atribute href=''
+
+  // CLASS LIST
+  // 1. classList.add() -> menambah atributte class
+  const p2 = document.querySelector('.p2');
+  p2.classList.add('label'); //menambah class label -> class='p2 label'
+
+  // p2.classList.toggle('biru-muda');
+  // 2. classList.remove() -> menghapus atributte class
+  p2.classList.remove('label'); //menghapus atributte class label -> class='p2'
+
+  // 2. classList.toggle() -> jika belom ada class maka akan menambah atributte class, jika sudah ada class maka akan mengapus class
+  document.body.classList.toggle('biru-muda'); //jika belom ada class pada body class='biru-muda' maka akan menambah atributte class='biru-muda' 
+  // jika sudah ada class='biru-muda' maka akan mengapus class='biru-muda'
+
+  // 3. classList.Replace -> merubah nama class
+  const p1 =document.querySelector('.p1');
+  p1.classList.replace('p1','paragraf1'); //merubah nama class='p1' menjadi class='paragraf1'
+
+  // 4. classList.item(n) -> mencari class item 
+// contoh <p class='satu dua tiga'></p> 
+// p.classList.item(2); maka akan mencari class urutan ke 3, karna di awali dari [0][1][2] . 
+
+// 4. classList.content(n) -> mencari apakah ada nama class terpilih
+// contoh 
+// p.classList.content('judu'); maka akan mencari class yang beratribut class='judul' 
+
+</script>
+</body>
+</html>

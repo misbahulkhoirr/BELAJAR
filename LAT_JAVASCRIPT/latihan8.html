@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBJECT</title>
+</head>
+<body>
+    
+    <script>
+// dengan function literal
+// var mhs1={
+//     nama : 'Misbah',
+//     kelas: '09tple010',
+//     jurusan:'teknik informatika'
+// }
+// var mhs2={
+//     nama : 'Eri',
+//     kelas: '09tple010',
+//     jurusan:'teknik informatika'
+// }
+
+// //dengan function declaration
+// function objecMahasiswa(nama, kelas, jurusan){
+//     var mhs={};
+//     mhs.nama= nama;
+//     mhs.kelas=kelas;
+//     mhs.jurusan=jurusan;
+//     return mhs;
+// }
+// var mhs1=objecMahasiswa('misbah','09tple010','informatika');
+
+//dengan function constructor
+function Mahasiswa(nama, kelas, jurusan){
+    this.nama= nama;
+    this.kelas=kelas;
+    this.jurusan=jurusan;
+   
+}
+var mhs1=new Mahasiswa('misbah','09tple010','informatika');
+
+    </script>
+</body>
+</html>

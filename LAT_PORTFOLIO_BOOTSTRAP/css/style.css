@@ -1,0 +1,49 @@
+html {
+    position: relative;
+}
+
+body {
+    bottom: 100px;
+}
+
+/* html dan body diatas buat ngakalin footer aggar tetap dibawah */
+
+.jumbotron img {
+    width: 150px;
+    border: 5px solid rgb(102, 100, 100);
+}
+
+hr {
+    width: 200px;
+    border-top: 3px solid rgb(43, 42, 42);
+}
+
+p {
+    font-size: 1.5em;
+}
+
+section {
+    min-height: 400px;
+}
+
+.portfolio {
+    background-color: #eee;
+}
+
+.contact {
+    min-height: 800px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #333;
+    padding: 30px;
+}
+
+footer p {
+    font-size: 1em;
+    color: rgb(219, 218, 215);
+}

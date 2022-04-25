@@ -1,0 +1,35 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: dimgray;
+}
+
+nav {
+    display: flex;
+    background-color: rgb(97, 200, 226);
+    justify-content: space-around;
+    height: 50px;
+}
+
+nav .logo {
+    margin-top: 10px;
+    padding: 5px;
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(194, 247, 242);
+}

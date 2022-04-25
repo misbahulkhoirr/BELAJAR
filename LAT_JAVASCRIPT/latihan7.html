@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUNCTION</title>
+</head>
+<body>
+    
+    <script>
+//         // Rekursif atau memanggil fungsi dirinya sendiri (pengulangan)
+function faktorial(n){
+//  //basecase untuk memberhentikan angka terakhir
+ if(n === 0){
+     return 1;
+ }
+ //stop basecase
+ return n* faktorial(n-1) ;
+}
+
+console.log(faktorial(5));
+
+// // //kalo dengan looping
+// function faktorial(n){
+//     var hasil=1;
+//     for(var i=n; i>0; i--){
+//         hasil*=i;
+//     }
+//     return hasil;
+// }
+// console.log(faktorial(5));
+
+    </script>
+</body>
+</html>

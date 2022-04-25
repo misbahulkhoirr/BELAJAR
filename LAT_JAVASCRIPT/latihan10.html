@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRAY</title>
+</head>
+<body>
+    
+    <script>
+// mengisi array
+//cara 1
+// var array=['misbah',19,'garuda'];
+// // console.log(array);//untuk menampilkan semua
+// console.log(array[2]); //untuk menampilkan index ke 3 (index array dimulai dari [0][1][2])
+
+// //cara 2
+// var array=[];
+// array[0]='misbah';
+// array[1]='gemini';
+// array[2]='tangerang';
+
+// console.log(array);
+
+// //cara 3 bersarang
+// var array=['misbah',19,['jalan','garuda']];
+// console.log(array[2][1]);
+
+// //menghapus array manual
+// var array=['misbah',19,'garuda'];
+// array[1]=undefined;//menghapus index ke 2 (19) menjadi undifined
+// console.log(array);
+
+
+//cara menampilkan array yang benar
+// var array=['misbah',19,'garuda'];
+// for(var i=0; i<3; i++){
+//     console.log(array[i]);
+// }
+
+// var array=['misbah','eri','hasan'];
+// for(var i=0; i< array.length; i++){
+//     console.log('Mahasiswa ke '+(i+1)+' : '+array[i]);
+// }
+
+
+// //METODE JOIN (menngabungkan seluruh isi array dan mengubahnya menjadi string)
+// var array=['misbah','eri','hasan'];
+// console.log(array.join(' - '))
+
+// //METODE PUSH AND POP
+// var array=['misbah','eri','hasan'];
+// // array.push('dodi', 'elma');// menambah nilai ke dalam elemen terakhir pada array
+// array.pop();//menhapus nilai elemen terakhir yang ada didalam array
+// console.log(array.join(' - '))
+
+// //METODE UNSHIFT dan SHIFT
+// var array=['misbah','eri','hasan'];
+// // array.unshift('dodi', 'elma');// menambah nilai ke dalam elemen pertama pada array
+// array.shift();//menhapus nilai elemen pertama yang ada didalam array
+// console.log(array.join(' - '))
+
+// //METODE SPLICE dan SLICE
+// var array=['misbah','eri','hasan','elma','doddi'];
+// // splice(indexAwal, maudihapusberapa. elemen1, elemen2,.. )
+// // array.splice(1,0,'dodi', 'elma');// menambah nilai ke dalam elemen baru di posisi tengah pada array
+
+// // slice(indexAwal, indexakhir)
+// var array2=array.slice(1,4);//menhapus nilai elemen pertama yang ada didalam array
+// console.log(array2.join(' - '));
+
+//FOREACH (menampilkan seluruh data)
+// var angka=[1,2,3,4,5,6,7,8];
+// for(var i=0 ; i<angka.length; i++){
+//     console.log(angka[i]);
+// } jika menampilkan menngunakan for
+
+// angka.forEach(function(e) {
+//     console.log(e);
+// });
+
+// //contoh2 foreach
+// var nama=['misbah','elma', 'eri'];
+
+// nama.forEach(function(e, i){
+//     console.log('Mahasiswa ke '+(i+1)+' adalah '+ e);
+// })
+
+// //MAP
+// var angka=[1,2,3,4,5,6,7,8];
+// // angka.map(function(e) {
+// //     console.log(e);
+// // });
+
+// var angka2=angka.map(function(e){
+//     return e*2;
+// })
+// console.log(angka2.join('-'));
+
+//SORT (mengurutkan angka agar sesuai susunan)
+
+// var angka=[3,5,2,4,1,15,20,25];
+// angka.sort(function(a,b){
+//     return a-b;
+// });
+// console.log(angka.join('-'));
+
+// // FILTER
+// var angka=[3,5,2,4,1,15,20,25];
+// var angka2= angka.filter(function (n){
+//     // return n == 5;
+//     return n > 5;
+// });
+// console.log(angka2);
+
+// FILTER
+var angka=[3,5,2,4,1,15,20,25];
+var angka2= angka.find(function (n){
+    // return n == 5;
+    return n > 5;
+});
+console.log(angka2);
+    </script>
+</body>
+</html>

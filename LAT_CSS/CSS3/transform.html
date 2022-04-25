@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>transform</title>
+	<style type="text/css">
+		p{
+			font-size: 20px;
+			text-align: center;
+		}
+		.kotak{
+			width: 200px;
+			height: 200px;
+			background-color: lightblue;
+			margin:50px auto;
+			transition: 1s;
+			/*
+			scale(angka) atau scaleX(angka), scaleY (angka);
+
+			rotate(deg) atau rotateX(deg), rotateY(deg);
+
+			skew(deg) atau skewX(deg), skewY(deg);
+
+			translate(deg) atau translateX(deg), translateY(deg);
+			*/
+		}
+		.kotak:hover{
+			transform: scale(2);
+			/* transform: scaleX(1.5) scaleY(2);*/
+		}
+	</style>
+</head>
+<body>
+<div class="kotak"></div>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+</body>
+</html>

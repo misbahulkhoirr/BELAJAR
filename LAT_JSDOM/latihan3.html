@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dom Selection</title>
+  <style>
+    * { 
+        border: 2px solid #dedede; 
+        padding: 15px; 
+        margin: 15px; 
+    }
+    html { 
+      margin: 0;
+      padding: 0;
+    }
+    body { 
+      max-width: 600px;
+      margin: 30px auto;
+      font-family: sans-serif;
+      color: #333;
+    }
+    .biru-muda{
+      background-color: lightblue;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="judul">Hello World</h1>
+  <div id="container">
+      <section id="a">
+          <p class="p1">paragraf 1</p>
+          <a href="http://instagram.com/sandhikagalih">Instagram Sandhika Galih</a>
+          <p class="p2">paragraf 2</p>
+          <p class="p3">paragraf 3</p>
+      </section>
+      <section id="b">
+          <p>paragraf 4</p>
+          <ul>
+              <li>item 1</li>
+              <li>item 2</li>
+              <li>item 3</li>
+          </ul>
+      </section>
+  </div>
+
+<script>
+// MANIPULASI NODE
+// Membuat elemen baru
+const pBaru=document.createElement('p'); //membuat tag atau elemen p
+const textpBaru=document.createTextNode('Paragraf baru'); //membuat text
+
+pBaru.appendChild(textpBaru); //menyimpan text kedalam pBaru
+
+//menyimpan pBaru kedalam section a (di akhir)
+const sectionA=document.getElementById('a');// mengambil section id='a'
+sectionA.appendChild(pBaru); // menyimpan pBaru kedalam section a
+
+
+// MEMBUAT LI ITEM BARU DENGAN URUTAN KEDUA
+const liBaru = document.createElement('li'); // membuat tag atau elemen li baru
+const textliBaru = document.createTextNode('item baru'); // membuat text item li baru
+
+liBaru.appendChild(textliBaru); // menyimpan text li baru ke dalam li baru
+
+const ul = document.querySelector('section#b ul'); // mengambil ul menggunakan selector
+const li2=ul.querySelector('li:nth-child(2)'); // mengambil li urutan kedua
+
+ul.insertBefore(liBaru,li2); // menyimpan li baru sebelum li urutan kedua
+
+// MENGHAPUS ELEMEN TAG A
+const a= document.getElementsByTagName('a')[0];//menangkap elemen tag a
+sectionA.removeChild(a); //menghapus elemen tag a
+
+
+// MERUBAH P4 MENJADI H2
+const sectionB=document.getElementById('b');
+const p4=sectionB.querySelector('p');
+
+const h2Baru = document.createElement('h2');
+const h2Text = document.createTextNode('JUDUL BARU');
+
+h2Baru.appendChild(h2Text);
+
+sectionB.replaceChild(h2Baru, p4);
+</script>
+</body>
+</html>

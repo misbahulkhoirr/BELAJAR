@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>gradient</title>
+	<style type="text/css">
+		.satu{
+			width: 300px;
+			height: 300px;
+			margin :10px auto;
+			background-image: linear-gradient(green, yellow, red);
+			/*background-image: linear-gradient(green, rgba(255,255,0,1), red);
+
+			background-image: linear-gradient(90deg, yellow, red); arah kanan ke kiri tinggal atur -90 deg
+
+			background-image: linear-gradient(45deg, yellow, red); arah diagonal tinggal atur -45 deg*/
+		}
+
+		.dua{
+			width: 300px;
+			height: 300px;
+			margin :10px auto;
+			background-image: radial-gradient(green 10%, yellow 30%, red  50%);
+			/*
+			background-image: radial-gradient(circle, green, yellow, red);
+
+			background-image: radial-gradient(ellipse, green, yellow, red);
+
+			background-image: radial-gradient(circle closest-corner, green, yellow, red);
+
+			background-image: radial-gradient(circle closest-side, green, yellow, red);
+			
+			background-image: radial-gradient(circle farthest-corner at top left, green, yellow, red);
+
+			background-image: radial-gradient(circle farthest-side at buttom right, green, yellow, red);
+
+			*/
+		}
+	</style>
+</head>
+<body>
+	<div class="satu">linear gradient</div>
+	<div class="dua">radial gradient</div>
+</body>
+</html>

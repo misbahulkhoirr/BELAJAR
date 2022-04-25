@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan color</title>
+    <style>
+        html, body{
+            height: 100%;
+        }
+        body {
+            text-align: center;
+        }
+        .biru-muda{
+            background-color: rgb(72, 255, 240);
+        }
+        .kotak{
+            width: 25px;
+            height: 25px;
+            margin:10px auto;
+        }
+        .merah{
+            background-color: red;
+        }
+        .hijau{
+            background-color: green;
+        }
+        .biru{
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Bermain dengan Warna</h1>
+    <button type="button" id="tUbahwarna">Ubah Warna</button>
+    <br><br>
+    <div class="kotak merah"></div>
+    <input type="range" name="sMerah" min="0" max="255">
+
+    <div class="kotak hijau"></div>
+    <input type="range" name="sHijau" min="0" max="255">
+
+    <div class="kotak biru"></div>
+    <input type="range" name="sBiru" min="0" max="255">
+
+
+    <script>
+        const tUbahwarna = document.getElementById('tUbahwarna');
+        tUbahwarna.onclick = function(){
+            // document.body.setAttribute('class','biru-muda');
+            document.body.classList.toggle('biru-muda');
+        }
+
+        const tAcakwarna = document.createElement('button');
+        const tekstombol = document.createTextNode('Acak Warna');
+        tAcakwarna.appendChild(tekstombol);
+        tAcakwarna.setAttribute('type','button');
+
+        tUbahwarna.after(tAcakwarna); //untuk posisi tombol acak warna
+
+        tAcakwarna.addEventListener('click', function(){
+            // const r = Math.random(); //Math.random() untuk menghasikan niai random dari nol koma sampai satu
+            const r = Math.round(Math.random() *255 + 1);//3 fungsi pembulatan angka Math.ceil() = pembulatan keatas, Math.floor()pembulatan kebawah, Math.round()
+            const g = Math.round(Math.random() *255 + 1);
+            const b = Math.round(Math.random() *255 + 1);
+            document.body.style.backgroundColor = 'rgb('+r+','+g+','+b+')';
+        });
+
+        const sMerah=document.querySelector('input[name=sMerah]');
+        sMerah.addEventListener('input', function(){
+            const r = sMerah.value;// mengambil value dari nilai input html . kasus disini mengambil nilai minmax
+            const g = sHijau.value;
+            const b = sBiru.value;
+            document.body.style.backgroundColor = 'rgb('+r+','+g+','+b+')';
+        });
+
+        const sHijau=document.querySelector('input[name=sHijau]');
+        sHijau.addEventListener('input', function(){
+            const r = sMerah.value;// mengambil value dari nilai input html . kasus disini mengambil nilai minmax
+            const g = sHijau.value;
+            const b = sBiru.value;
+            document.body.style.backgroundColor = 'rgb('+r+','+g+','+b+')';
+        });
+
+        const sBiru=document.querySelector('input[name=sBiru]');
+        sBiru.addEventListener('input', function(){
+            const r = sMerah.value;// mengambil value dari nilai input html . kasus disini mengambil nilai minmax
+            const g = sHijau.value;
+            const b = sBiru.value;
+            document.body.style.backgroundColor = 'rgb('+r+','+g+','+b+')';
+        });
+
+        document.body.addEventListener('mousemove',function(event){
+            const xPos = Math.round((event.clientX / window.innerWidth) * 255);
+            const yPos = Math.round((event.clientY / window.innerHeight) * 255);
+            document.body.style.backgroundColor = 'rgb('+xPos+','+yPos+',100)';
+        });
+    </script>
+</body>
+</html>

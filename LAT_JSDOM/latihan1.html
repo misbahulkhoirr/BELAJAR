@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dom Selection</title>
+  <style>
+    * { 
+        border: 2px solid #dedede; 
+        padding: 15px; 
+        margin: 15px; 
+    }
+    html { 
+      margin: 0;
+      padding: 0;
+    }
+    body { 
+      max-width: 600px;
+      margin: 30px auto;
+      font-family: sans-serif;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="judul">Hello World</h1>
+  <div id="container">
+      <section id="a">
+          <p class="p1">paragraf 1</p>
+          <a href="http://instagram.com/sandhikagalih">Instagram Sandhika Galih</a>
+          <p class="p2">paragraf 2</p>
+          <p class="p3">paragraf 3</p>
+      </section>
+      <section id="b">
+          <p>paragraf 4</p>
+          <ul>
+              <li>item 1</li>
+              <li>item 2</li>
+              <li>item 3</li>
+          </ul>
+      </section>
+  </div>
+
+<script>
+    // DOM SELECTION
+    // 1. document.getElementById() -> menangkap satu elemen berdasarkan id
+    const judul = document.getElementById('judul');
+    judul.style.color='red';
+    judul.style.backgroundColor= 'grey';
+    judul.innerHTML = 'Qbotsista';
+
+    // 2. document.getElementsByTagName -> menangkap banyak elemen berdasarkan tag html (HTMlCollection)
+    const p= document.getElementsByTagName('p');
+    // p[2].style.backgroundColor ='lightblue';// p[2] = merubah warna background index ke 3
+    for(let i=0; i< p.length; i++){
+        p[i].style.backgroundColor ='lightblue';// p[i] = banyaknya tag p (array)
+    }
+
+    const h1= document.getElementsByTagName('h1')[0];
+    h1.style.fontSize ='50px';
+    
+    // 3. document.getElementsByClassName() -> menangkap banyak element berdasarkan class (HTMLCollection)
+    const p1= document.getElementsByClassName('p1')[0];
+    // p1[0].innerHTML ='di ubah javascript';
+    p1.innerHTML ='di ubah javascript';
+    p1.style.color ='red';
+
+    // 4. document.querySelector() -> menangkap satu elemen berdasarkan selector css
+    const p4= document.querySelector('#b p');
+    p4.style.color ='green';
+
+    const li2= document.querySelector('section#b ul li:nth-child(2)');
+    li2.style.backgroundColor= 'orange';
+
+    // 5. document.querySelectorAll() -> menangkap banyak elemen berdasarkan selector css (Nodelist)
+    const p3 = document.querySelectorAll('p');
+    // p3[3].style.fontSize='30px';// p2[3] = merubah elemen p ke 4
+    for(let i=0; i< p.length; i++){
+        p3[i].style.fontSize='30px';// p2[i] = merubah semuah elemen p
+    }
+
+
+    // MERUBAH NODE ROOT ->default(document)
+    const sectionA= document.getElementById('a');
+    const p2=sectionA.querySelector('p');
+    p2.style.fontWeight='bold';
+
+    //ATAU
+
+    // const sectionA= document.querySelector('section#a');
+    // const p2=sectionA.getElementsByTagName('p')[0];
+    // p2.style.fontWeight='bold';
+</script>
+</body>
+</html>

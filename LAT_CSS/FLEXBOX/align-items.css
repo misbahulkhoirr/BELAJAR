@@ -1,0 +1,86 @@
+
+.container1{
+	width: 500px;
+	height: 500px;
+	border: 1px solid grey;
+	margin: 30px auto;
+	padding: 5px;
+	box-sizing: border-box;
+	display: flex;
+	align-items:  flex-start;
+	/*flex-start, flex-end, center, 
+	stretch, baseline*/
+}
+
+.container2{
+	width: 500px;
+	height: 500px;
+	border: 1px solid grey;
+	margin: 30px auto;
+	padding: 5px;
+	box-sizing: border-box;
+	display: flex;
+	align-items:  flex-end;
+	/*flex-start, flex-end, center, 
+	stretch, baseline*/
+}
+
+.container3{
+	width: 500px;
+	height: 500px;
+	border: 1px solid grey;
+	margin: 30px auto;
+	padding: 5px;
+	box-sizing: border-box;
+	display: flex;
+	align-items:  center;
+	/*flex-start, flex-end, center, 
+	stretch, baseline*/
+}
+
+.container4{
+	width: 500px;
+	height: 500px;
+	border: 1px solid grey;
+	margin: 30px auto;
+	padding: 5px;
+	box-sizing: border-box;
+	display: flex;
+	align-items:  stretch;
+	/*flex-start, flex-end, center, 
+	stretch, baseline*/
+}
+.container5{
+	width: 500px;
+	height: 500px;
+	border: 1px solid grey;
+	margin: 30px auto;
+	padding: 5px;
+	box-sizing: border-box;
+	display: flex;
+	align-items:  baseline;
+	/*flex-start, flex-end, center, 
+	stretch, baseline*/
+}
+
+.container1 div,
+.container2 div,
+.container3 div,
+.container5 div{
+	width: 100px;
+	height: 100px;
+	background-color: lightskyblue;
+	margin:2px;
+}
+.container4 div{
+	width: 100px;
+	background-color: lightskyblue;
+	margin:2px;
+}
+
+.container5 div.dua{
+	font-size: 50px;
+}
+.container5 div.empat{
+	font-size: 100px;
+}

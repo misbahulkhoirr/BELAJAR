@@ -1,0 +1,137 @@
+.container1{
+	width: 500px;
+	border: 1px solid grey;
+	margin: 30px auto;
+	padding: 5px;
+	box-sizing: border-box;
+	display: flex;
+}
+
+.container2{
+	width: 500px;
+	border: 1px solid grey;
+	margin: 30px auto;
+	padding: 5px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row-reverse;
+	/*row, row-reverse, column. column-revers*/
+}
+
+.container3{
+	width: 500px;
+	border: 1px solid grey;
+	margin: 30px auto;
+	padding: 5px;
+	box-sizing: border-box;
+	display: flex;
+}
+
+.container4{
+	width: 500px;
+	border: 1px solid grey;
+	margin: 30px auto;
+	padding: 5px;
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+	/*nowrap, wrap, wrap-reverse*/
+}
+.container5{
+	width: 500px;
+	border: 1px solid grey;
+	margin: 30px auto;
+	padding: 5px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-around; 
+	/*flex-start, flex-end, center, 
+	space-between, space-around, space-evenly*/
+}
+
+.container6{
+	width: 500px;
+	height: 500px;
+	border: 1px solid grey;
+	margin: 30px auto;
+	padding: 5px;
+	box-sizing: border-box;
+	display: flex;
+	align-items:  center;
+	/*flex-start, flex-end, center, 
+	stretch, baseline*/
+}
+
+.container7{
+	width: 500px;
+	border: 1px solid grey;
+	margin: 30px auto;
+	padding: 5px;
+	box-sizing: border-box;
+	display: flex;
+	align-content: space-between;
+	/*flex-start, flex-end, center, 
+	stretch, space-between, space-around*/
+}
+
+.container7 div.satu{
+	order: 2;
+}
+.container7 div.tiga{
+	order: 1;
+}
+
+
+.container1 div,
+.container2 div,
+.container3 div,
+.container4 div,
+.container5 div,
+.container6 div,
+.container7 div{
+	width: 100px;
+	height: 100px;
+	background-color: lightskyblue;
+	margin:2px;
+}
+
+.container8{
+	width: 500px;
+	height: 150px;
+	border: 1px solid grey;
+	margin: 30px auto;
+	padding: 5px;
+	box-sizing: border-box;
+	display: flex;
+	
+}
+.container8 div{
+	background-color: lightskyblue;
+	margin:2px;
+	flex:1;
+}
+.container8 div.dua{
+	flex: 2;
+}
+
+.container9{
+	width: 500px;
+	height: 150px;
+	border: 1px solid grey;
+	margin: 30px auto;
+	padding: 5px;
+	box-sizing: border-box;
+	display: flex;
+}
+.container9 div{
+	background-color: lightskyblue;
+	margin:2px;
+	flex:1;
+}
+.container9 div.dua{
+	flex: 2;
+	align-self: flex-end;
+	/*auto, flex-start, flex-end, center,
+	baseline, stretch*/
+}
+

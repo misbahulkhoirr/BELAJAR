@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOOPING</title>
+</head>
+<body>
+    
+    <script>
+        // WHILE
+        //pengulangan di hentikan dengan konfirmasi user
+        // var ulang = true;
+        // while(ulang){
+        //     console.log('Hello Word');
+        //     ulang= confirm('ulang lagi ?');
+        // }
+
+        // // dihentikan oleh sistem
+        // var nilaiawal = 1;
+        // while( nilaiawal<=5){
+        //     console.log('Hello world');
+        //     nilaiawal ++;
+        // }
+        
+        // var nilaiawal = 1;
+        // while( nilaiawal<=5){
+        //     console.log('Hello world'+nilaiawal+'x');
+        //     nilaiawal ++;
+        // }
+
+        // // FOR
+        // for(var nilaiawal=1; nilaiawal<=5; nilaiawal++){
+        //     console.log('Hello world'+nilaiawal+'x');
+        // }
+
+        // PENGULANGAN BERSARANG
+        // contoh 1
+        // var string ='';
+        // for(var i=0; i < 10; i++){
+        //     string +='*';
+        // }
+        // console.log(string);
+
+        // contoh 2
+        // var string ='';
+        // for(var i=0; i < 10; i++){
+        //     for(var j=0; j<5; j++){
+        //     string +='*';
+        //     }
+        //     string +='\n';
+        // }
+        // console.log(string)
+
+        // //contoh 3
+        // var string ='';
+        // for(var i=0; i < 10; i++){
+        //     for(var j=0; j<=i; j++){
+        //     string +='*';
+        //     }
+        //     string +='\n';
+        // }
+        // console.log(string);
+
+         //contoh 4
+         var string ='';
+        for(var i=10; i > 0; i--){
+            for(var j=0; j<i; j++){
+            string +='*';
+            }
+            string +='\n';
+        }
+        console.log(string);
+    </script>
+</body>
+</html>

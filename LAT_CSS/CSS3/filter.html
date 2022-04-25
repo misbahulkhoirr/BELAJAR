@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FILTER</title>
+	<style>
+		body{
+			text-align: center;
+		}
+		img{
+			width: 500px;
+			height: 500px;
+			filter: hue-rotate(-50deg) blur(10px); 
+			/*untuk jalan di semua browser harus pakai webkit . contoh -webkit-filter: blur(10px);*/
+
+			/*blur(px)
+			brightness(%)
+			contrast(%)
+			saturate(%)
+			grayscle(%)
+			sepia(%)
+			invert(%)
+			opacity(%)
+			hue_rotate(deg)
+			drop-shadow(px px px black)*/
+			transition: 1s;
+		}
+		img:hover{
+			filter: hue-rotate(0deg) blur(0px);
+		}
+		h1{
+			filter: drop-shadow(5px 5px 5px black);
+		}
+	</style>
+</head>
+<body>
+	<h1>BELAJAR FILTER</h1>
+	<img src="img.png">
+</body>
+</html>

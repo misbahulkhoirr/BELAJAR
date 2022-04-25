@@ -1,0 +1,85 @@
+body{
+	background-color: white;
+	background-image: url(img.png);
+	background-repeat: repeat-x;
+}
+
+h1{
+			font-variant: small-caps;
+			font-family: verdana, sans-serif;
+			font-size: 100px;
+			font-weight: normal;
+			font-style: italic;
+		}
+h2{
+	font-style: italic;
+}
+
+/* gruping*/
+h1, h2{
+	color: green;
+}
+
+/* separator */
+ul li a{
+	color: orange;
+}
+
+ol li a{
+	color: red;
+}
+
+/* class*/
+.p1{
+	font-family: georgia, serif;
+	font-size: 10px;
+	font-style: italic;
+	color: blue;
+	text-indent: 50px;
+	text-decoration: underline;
+	text-transform: uppercase;
+
+}
+.p2{
+	font-family: georgia, serif;
+	font-size: 20px;
+	font-style: italic;
+	color: red;
+	text-align: justify;
+}
+.cetak-tebal{
+	font-weight: bold;
+}
+p.cetak-tebal{
+	font-weight: bold;
+}
+
+
+/* pseudo class*/
+.hello:link{
+	color: orange;
+}
+.hello:hover{
+	color: blue;
+	font-size: 20px;
+}
+.hello:active{
+	font-style: italic;
+}
+.hello:visited{
+	color: red;
+}
+
+li:first-child a{
+	color: green;
+}
+li:last-child a{
+	color: red;
+}
+/* bisa angka urutan (1)(2).. atau urutan n contoh (1n)(2n).. atau (1n+2)(3n-1) atau even, odd*/
+li:nth-child(odd) a{
+	color: blue;
+}
+li:nth-child(odd) a:hover{
+	color: red;
+}

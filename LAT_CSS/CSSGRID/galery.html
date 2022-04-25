@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALERY</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(211, 204, 204);
+            text-align: center;
+            margin: 30px;
+        }
+        img{
+            display: block;
+            width: 100%;
+        }
+        .galery{
+            width: 80%;
+            border: 10px solid white;
+            margin: 10px auto;
+            list-style:none;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0,0.5);
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-gap: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>MY GALERY</h2>
+    <ul class="galery">
+        <li><img src="img/1.png" alt=""></li>
+        <li><img src="img/2.png" alt=""></li>
+        <li><img src="img/3.png" alt=""></li>
+        <li><img src="img/4.png" alt=""></li>
+        <li><img src="img/5.png" alt=""></li>
+    </ul>
+</body>
+</html>
