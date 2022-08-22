@@ -12,7 +12,7 @@
       @endif
 
   <div class="table-responsive col-lg-10">
-    <a href="/admin/kategori/create" class="btn btn-primary mb-3">Tambah kategori</a>
+    <button type="button" class="btn btn-primary mb-3">Tambah kategori</button>
     <table class="table table-striped table-sm">
       <thead>
         <tr>

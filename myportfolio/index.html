@@ -1,0 +1,967 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <!-- <link rel="apple-touch-icon" sizes="76x76" href="https://mrrsite.com/assets/img/unnamed.png"> -->
+  <link rel="icon" type="image/png" href="img/icon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <title>Portfolio</title>
+
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+  <!-- Font Awesome -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+
+  <!-- CSS Files -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/material-kit.css" rel="stylesheet"/>
+
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="css/demo.css" rel="stylesheet" />
+
+  <link href="css/style.css" rel="stylesheet" />
+
+  <link href="css/agency.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/pace.min.css">
+
+  <script src="js/sweetalert2.all.min.js"></script>
+
+
+  <style type="text/css">
+    a {
+      text-decoration:none;
+      color:#3c8dbc;
+    }
+    .no_style{
+       text-decoration:none;
+        color:#000;
+    }
+    #tombolScrollTop
+    {
+      cursor: pointer;
+      position:fixed;
+      left:94%;
+      bottom:20px;
+      border:3px solid #fff;
+      background:#3c8dbc;
+      color:#585858;
+      border-radius:30px;
+      height:40px;
+      width:40px;
+      font-size:15px;
+      display:none;
+      text-decoration: none;
+    }
+
+     @media only screen and (max-width: 500px) {
+       #tombolScrollTop
+      {
+        cursor: pointer;
+        position:fixed;
+        left:85%;
+        bottom:50px;
+        border:3px solid #fff;
+        background:#3c8dbc;
+        color:#585858;
+        border-radius:30px;
+        height:40px;
+        width:40px;
+        font-size:15px;
+        display:none;
+        text-decoration: none;
+      }
+    }
+    /* Container holding the image and the text */
+    .news-content {
+        position: relative;
+        text-align: left;
+        
+    }
+
+    /* Top left text */
+    .top-headline {
+        position: absolute;
+        top: 20px;
+        left: 0px;
+        text-align: center;
+        font-size: 18px;
+        background:  #fff;
+        color:#3c8dbc;
+        width: 85px;
+        height: 23px;
+
+    }
+
+    /* Bottom left text */
+    .bottom-headline {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        background:  rgba(153,153,153, 0.50);
+        color:#fff;
+        width: 100%;
+        height: 23%;
+    }
+    
+    @media only screen and (max-width: 500px) {
+        
+      .top-headline {
+          position: absolute;
+          top: 20px;
+          left: 0px;
+          text-align: center;
+          font-size: 12px;
+          background:  #fff;
+          color:#3c8dbc;
+          width: 55px;
+          height: 20px;
+
+      }
+  
+      .bottom-headline {
+          position: absolute;
+          bottom: 0px;
+          left: 0px;
+          background:  rgba(153,153,153, 0.50);
+          color:#fff;
+          width: 100%;
+          height: 43%;
+          font-size: 10px;
+      }
+
+      h3{
+        font-size: 16px;
+      }
+
+      
+    
+    }
+
+    .img_highlight{
+      height: 100px;
+    }
+    /* Top left text */
+    .top-hightlight {
+        position: absolute;
+        top: 10px;
+        left: -15px;
+        text-align: left;
+        font-size: 10px;
+        background:  rgba(153,153,153, 0.50);
+        color:#fff;
+        width: 60px;
+        height: 20px;
+
+    }
+    
+
+    /* Bottom left text */
+    .bottom-hightlight {
+        position: absolute;
+        bottom: -40px;
+        left: 0px;
+        background:  #fff;
+        color:#000;
+        width: 85%;
+        height: 85%;
+        font-size: 10px;
+    }
+
+    @media only screen and (max-width: 500px) {
+      /* Top left text */
+      .top-hightlight {
+          position: absolute;
+          top: 0px;
+          left: -15px;
+          text-align: left;
+          font-size: 6px;
+          background:  rgba(153,153,153, 0.50);
+          color:#fff;
+          width: 40px;
+          height: 15px;
+      }
+      
+
+      /* Bottom left text */
+      .bottom-hightlight {
+          position: absolute;
+          bottom: -10px;
+          left: -10px;
+          background:  #fff;
+          color:#000;
+          width: 85%;
+          height: 85%;
+          font-size: 6px;
+      }
+
+      h5{
+        font-size: 6px;
+      }
+
+      .img_highlight{
+        height:50px;
+      }
+
+    }
+    
+    .hr{
+      background-color:#3c8dbc;
+      margin-top:-10px;
+      height: 8px;
+      width:120px;
+      margin-left:-1px;
+    }
+
+    .hr1{
+      background-color:#3c8dbc;
+      margin-top:-10px;
+      height: 8px;
+      width:150px;
+      margin-left:0px;
+    }
+
+    .padding{
+      padding-bottom: 50px;
+    }
+    
+
+    
+  </style>
+</head>
+
+<body class="profile-page">
+  <nav class="navbar navbar-transparent navbar-fixed-top navbar-color-on-scroll">
+  <!-- Navbar -->
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-index">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="https://misbahulkhoirr.github.io/myportfolio/" >
+          <div class="logo-container">
+            <div class="logo">
+                <img src="img/icon.png" alt="MISBAH" >
+            </div>
+            <div style="margin-left:3px;margin-top:-5px;">
+              <a href="?lang=en" rel="tooltip" style="color:#a8b1bf;" title="You are in English Language" data-placement="bottom" data-html="true"><b>EN</b></a> / 
+              <a href="?lang=id" rel="tooltip" style="color:#ffffff;" title="Change To Indonesian Language" data-placement="bottom" data-html="true"><b>ID</b></a>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navigation-index">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="https://misbahulkhoirr.github.io/myportfolio/home">
+              Home          </a>
+          </li>
+          <li>
+            <a href="https://misbahulkhoirr.github.io/myportfolio/">
+              About Me          </a>
+          </li>
+          <!--<li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                News <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                              <li><a href="https://mrrsite.com/news/categories/3">Music</a></li>
+                              <li><a href="https://mrrsite.com/news/categories/5">Politics</a></li>
+                              <li><a href="https://mrrsite.com/news/categories/2">Sci-Tech</a></li>
+                              <li><a href="https://mrrsite.com/news/categories/4">Sports</a></li>
+                              <li><a href="https://mrrsite.com/news/categories/1">Uncategory</a></li>
+                <li><a href="https://mrrsite.com/news">Show All <i class="fa fa-caret-right"></i></a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Article <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                              <li><a href="https://mrrsite.com/article/categories/7">Intermezzo</a></li>
+                              <li><a href="https://mrrsite.com/article/categories/6">Life</a></li>
+                              <li><a href="https://mrrsite.com/article/categories/10">Musics</a></li>
+                              <li><a href="https://mrrsite.com/article/categories/8">Technology</a></li>
+                              <li><a href="https://mrrsite.com/article/categories/9">Uncategory</a></li>
+                <li><a href="https://mrrsite.com/article">Show All <i class="fa fa-caret-right"></i></a></li>
+              </ul>
+            </li>-->
+
+          <li>
+            <a rel="tooltip" title="Follow me on Twitter" data-placement="bottom" href="https://twitter.com/qbot_sista" target="_blank" class="btn btn-white btn-simple btn-just-icon">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a rel="tooltip" title="Follow me on Instagram" data-placement="bottom" href="https://www.instagram.com/qbot_sista" target="_blank" class="btn btn-white btn-simple btn-just-icon">
+              <i class="fa fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a rel="tooltip" title="See me on Facebook" data-placement="bottom" href="https://www.facebook.com/qbotsista" target="_blank" class="btn btn-white btn-simple btn-just-icon">
+              <i class="fa fa-facebook-square"></i>
+            </a>
+          </li>
+          <li>
+            <a rel="tooltip" title="See me on LinkedIn" data-placement="bottom" href="https://www.linkedin.com/in/misbahul-khoir-s-kom-3b3939169" target="_blank" class="btn btn-white btn-simple btn-just-icon">
+              <i class="fa fa-linkedin-square"></i>
+            </a>
+          </li>
+        </ul>
+        </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+  <div class="wrapper">
+    <div class="header" style="background-image: url('img/laptop.jpg'); background-size: cover;">
+      <div class="alert" style="margin:0; padding:0;"></div>
+    </div>    
+      <div class="main main-raised">
+        <div class="container">
+          <div class="row">
+            <div class="profile">
+              <div class="avatar">
+                <img src="img/misbah.jpg" alt="Circle Image" class="img-circle img-responsive img-raised">
+              </div>
+              <div class="name">
+                <h3 class="title">MISBAHUL KHOIR</h3>
+                <h6><p>PROGRAMMER, ART, BIG DREAMER</p></h6>
+              </div>
+            </div>
+          </div>
+          <div class="description text-center">
+            <p align="justify"><b>Hallo Saya Misbah,</b> saya telah berkecimpung di bidang pemrograman sejak saya masih di sekolah kejuruan, khususnya pengembangan web. Sampai saat ini saya masih terus mengembangkan wawasan saya tentang itu. Dan saya sangat senang ketika saya membangun aplikasi web atau program aplikasi lainnya karena saya dapat membuat aplikasi yang sangat berguna bagi orang lain. Selain itu saya juga kooperatif ketika bekerja dengan tim, mudah beradaptasi dan tanggap dalam mengatasi suatu masalah.</p>
+          </div>
+            <hr  style="margin-top: 30px;">
+            <div class="col-sm-12 col-md-6 text-center hidden-xs">
+              <img style="width:80%" src="img/about.jpg" class="img-responsive">
+            </div>
+            <div class="col-sm-12 col-md-6"><br><br>
+              <div style="margin-bottom: 20px;" class="" >
+                <b>Nama Lengkap :</b><br>
+                Misbahul Khoir
+              </div>
+              <div style="margin-bottom: 20px;" class="" >
+                <b>Tempat, Tanggal Lahir :</b><br>
+                Tangerang, 19 Juni 1990
+              </div>
+              <div style="margin-bottom: 20px;" class="" >
+                <b>Alamat</b><br>
+                Batu jaya timur RT 006/006 Kel. Batujaya Kec. Batuceper Kota Tangerang 15121
+              </div>
+              <div class="row">
+                <div class="col-xs-12 col-sm-4 " >
+                  <b>Jenis Kelamin</b><br>
+                  Laki-laki
+                </div>
+                <div class="col-xs-12 col-sm-4 " >
+                  <div style="margin-top: 20px;" class="visible-xs">
+                  </div>
+                  <b>Kebangsaan</b><br>
+                  Indonesia
+                </div>
+              </div>
+              
+              <div class="row" style="margin-top: 20px;">
+                <div class="col-xs-12 col-sm-4 " >
+                  <b>Agama</b><br>
+                  Islam
+                </div>
+                <div class="col-xs-12 col-sm-4 " >
+                  <div style="margin-top: 20px;" class="visible-xs"></div>
+                  <b>Status</b><br>
+                  Lajang
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="profile-tabs">
+                  <div class="nav-align-center">
+                    <ul class="nav nav-pills" role="tablist">
+                      <li class="active">
+                        <a href="#education" role="tab" data-toggle="tab">
+                          <i class="fa fa-graduation-cap"></i>Education
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#skill" role="tab" data-toggle="tab">
+                          <i class="fa fa-tasks"></i>Skill
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#work" role="tab" data-toggle="tab">
+                          <i class="fa fa-suitcase"></i>
+                          Experience				                            
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#portfolio" role="tab" data-toggle="tab">
+                          <i class="fa fa-code"></i>
+                          Portfolio
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="tab-content gallery">
+                      <div class="tab-pane active" id="education">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="col-sm-12 col-md-3">
+                              <div class="panel panel-default education blue" >
+                                <div class="panel-body">
+                                  <div class="text">
+                                    <img src="img/MI.jpg" style="width:80px;height:80px;">
+                                    <div class="title" >MI Al-Barkah</div>
+                                      <div class="text-muted" ><small>Dari 1997 sampai 2003</small></div>
+                                        <div class="detail">
+                                          Di sekolah dasar, saya sudah belajar selama 6 tahun.
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col-sm-12 col-md-3">
+                              <div class="panel panel-default education blue" >
+                                <div class="panel-body">
+                                  <div class="text">
+                                  <img src="img/SMP.jpg" style="width:80px;height:80px;">
+                                    <div class="title" >SMP Al-Barkah</div>
+                                    <div class="text-muted" ><small>Dari 2003 sampai 2006</small></div>
+                                    <div class="detail">
+                                      Di Sekoah Menengah Pertama, saya sudah belajar selama 3 tahun.</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col-sm-12 col-md-3">
+                              <div class="panel panel-default education blue" >
+                                <div class="panel-body">
+                                  <div class="text">
+                                  <img src="img/SMK.jpg" style="width:80px;height:80px;">
+                                    <div class="title" >SMK Bandara</div>
+                                    <div class="text-muted" ><small>Dari 2006 sampai 2009</small></div>
+                                    <div class="detail">
+                                      Di Sekolah Menengah Kejuruan, saya mengambil jurusan Akuntansi.</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col-sm-12 col-md-3">
+                              <div class="panel panel-default education blue" >
+                                <div class="panel-body">
+                                  <div class="text">
+                                  <img src="https://mrrsite.com/assets/img/unpam.jpg" style="width:80px;height:80px;">
+                                    <div class="title" >Universitas Pamulang</div>
+                                    <div class="text-muted" ><small>Dari 2016 sampai 2020</small></div>
+                                    <div class="detail">
+                                      Saat kuliah, saya mengambil jurusan Teknik Informatika.</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="tab-pane text-center" id="skill">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <h4>Frontend Developer</h4>
+                            <div class="row">
+                              <div class="col-md-2"></div>
+                              <div class="col-md-4">
+                                <h6>HTML</h6>
+                              </div>
+                              <div class="col-md-4">
+                                <h6>CSS & BOOTSRAPPING</h6>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <h4>Backend Developer</h4>
+                            <div class="row">
+                              <div class="col-md-2"></div>
+                              <div class="col-md-4">
+                                <h6>HTML</h6>
+                              </div>
+                              <div class="col-md-4">
+                                <h6>CSS & BOOTSRAPPING</h6>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- <div class="tab-pane text-center" id="skill">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="page" style="padding-top: 50px;">
+                              <div class="row">
+                                <div class="col-md-4">
+                                  <div class="progress-wrap">
+                                    <h6 align="left">HTML, CSS & BOOTSRAPPING</h6>
+                                    <div class="progress">
+                                      <div class="progress-bar color2" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+                                        <span class="bar-width wow fadeInDown animated" data-wow-delay="1000ms">90%</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-4">
+                                  <div class="progress-wrap">
+                                    <h6 align="left">PHP</h6>
+                                    <div class="progress">
+                                      <div class="progress-bar color6" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%">
+                                        <span class="bar-width wow fadeInDown animated" data-wow-delay="1000ms">85%</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-4">
+                                  <div class="progress-wrap">
+                                    <h6 align="left">SQL</h6>
+                                    <div class="progress">
+                                      <div class="progress-bar color8" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+                                        <span class="bar-width wow fadeInDown animated" data-wow-delay="1000ms">90%</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-4">
+                                  <div class="progress-wrap">
+                                    <h6 align="left">Javascript, JQUERY & AJAX</h6>
+                                    <div class="progress">
+                                      <div class="progress-bar color5" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" style="width: 78%">
+                                        <span class="bar-width wow fadeInDown animated" data-wow-delay="1000ms">78%</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-4">
+                                  <div class="progress-wrap">
+                                    <h6 align="left">LARAVEL</h6>
+                                    <div class="progress">
+                                      <div class="progress-bar color3" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+                                        <span class="bar-width wow fadeInDown animated" data-wow-delay="1000ms">75%</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-4">
+                                  <div class="progress-wrap">
+                                    <h6 align="left">CODEIGNITER</h6>
+                                    <div class="progress">
+                                      <div class="progress-bar color4" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                        <span class="bar-width wow fadeInDown animated" data-wow-delay="1000ms">80%</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-4">
+                                  <div class="progress-wrap">
+                                    <h6 align="left">GIT/GITHUB</h6>
+                                    <div class="progress">
+                                      <div class="progress-bar color10" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                                        <span class="bar-width wow fadeInDown animated" data-wow-delay="1000ms">70%</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-4">
+                                  <div class="progress-wrap">
+                                    <h6 align="left">REST API</h6>
+                                    <div class="progress">
+                                      <div class="progress-bar color7" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                                        <span class="bar-width wow fadeInDown animated" data-wow-delay="1000ms">70%</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            
+                                <div class="col-md-4">
+                                  <div class="progress-wrap">
+                                    <h6 align="left">Adobe Photoshop</h6>
+                                    <div class="progress">
+                                      <div class="progress-bar color1" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%">
+                                        <span class="bar-width wow fadeInDown animated" data-wow-delay="1000ms">85%</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-4">
+                                  <div class="progress-wrap">
+                                    <h6 align="left">Microsoft 	Office</h6>
+                                    <div class="progress">
+                                      <div class="progress-bar color9" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+                                        <span class="bar-width wow fadeInDown animated" data-wow-delay="1000ms">90%</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                               
+                                <div class="col-md-4">
+                                  <div class="progress-wrap">
+                                    <h6 align="left">Communication</h6>
+                                    <div class="progress">
+                                      <div class="progress-bar color3" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%">
+                                        <span class="bar-width wow fadeInDown animated" data-wow-delay="1000ms">85%</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-4">
+                                  <div class="progress-wrap">
+                                    <h6 align="left">Creativity</h6>
+                                    <div class="progress">
+                                      <div class="progress-bar color7" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100" style="width: 87%">
+                                        <span class="bar-width wow fadeInDown animated" data-wow-delay="1000ms">87%</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-4">
+                                  <div class="progress-wrap">
+                                    <h6 align="left">Teamwork</h6>
+                                    <div class="progress">
+                                      <div class="progress-bar color2" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%">
+                                        <span class="bar-width wow fadeInDown animated" data-wow-delay="1000ms">95%</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div> -->
+
+                      <div class="tab-pane text-center" id="work">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <h4>Pengalaman Kerja</h4>
+                            <br> <br>
+                            <div class="row">
+                              <div class="col-lg-12">
+                                <ul class="timeline">
+                                  <li>
+                                    <div class="timeline-image" style="background-color: #ffffff;">
+                                      <img class="rounded-circle img-fluid" src="img/indahkargo.png" alt="">
+                                    </div>
+                                    <div class="timeline-panel">
+                                      <div class="timeline-heading">
+                                        <p><b>2019 - 2020</b></p>
+                                        <h4 class="subheading">PT. Indah Kargo Logistik</h4>
+                                      </div>
+                                      <div class="timeline-body">
+                                        <p class="text-muted">Data Entry</p>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="timeline-inverted">
+                                      <div class="timeline-image">
+                                        <img class="rounded-circle img-fluid" src="img/evergood.png" alt="">
+                                      </div>
+                                      <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                          <p><b>2015 - 2016</b></p>
+                                          <h4 class="subheading">PT. Evergood Plastics Packaging Indonesia</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                          <p class="text-muted">Operator Produksi</p>
+                                        </div>
+                                      </div>
+                                  </li>
+                                  <li>
+                                    <div class="timeline-image" style="background-color: #ffffff;">
+                                      <img class="rounded-circle img-fluid" src="img/armorindoartha.jpg" alt="">
+                                    </div>
+                                    <div class="timeline-panel">
+                                      <div class="timeline-heading">
+                                        <p><b>2013 - 2014</b></p>
+                                        <h4 class="subheading">PT. Armorindo Artha Bank BCA</h4>
+                                      </div>
+                                      <div class="timeline-body">
+                                        <p class="text-muted">Staff Kas </p>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  
+                                  <li class="timeline-inverted">
+                                    <div class="timeline-image">
+                                      <h4>My<br>Experience<br>Story!</h4>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="tab-pane text-center" id="portfolio">
+                        <div class="row">
+                          <div class="col-md-6 col-md-offset-3">
+                            <h4>Pengalaman saya sebagai Web Development</h4>
+                            <br><br>
+                            <!-- Carousel Card -->
+                            <div class="card-carousel">
+                              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                                <div class="carousel slide" data-ride="carousel">
+                                  <!-- Wrapper for slides -->
+                                  <div class="carousel-inner">
+                                    <div class="item active">
+                                      <img src="img/maulawedding.png" alt="Awesome Image">
+                                      <h4 class="title" style="margin-bottom: 0;">Ecommerce Website System</h4>
+                                      <p>Membuat sistem transaksi perdagangan secara elektronik. Menggunakan Framework PHP Codeigniter, MySQL, Javascript, dan Bootstrap 3.</p>
+                                      <div class="text-muted">
+                                        <small>
+                                          Developed in 2020					</small>
+                                      </div>
+                                    </div>
+                                    <div class="item">
+                                      <img src="img/maulaweddingadmin.png" alt="Awesome Image">
+                                      <h4 class="title" style="margin-bottom: 0;">Administrasi System Ecommerce</h4>
+                                      <p>Membuat sistem administrasi. Menggunakan Framework PHP Codeigniter, MySQL, Javascript, dan Bootstrap 3.</p>
+                                      <div class="text-muted">
+                                        <small>
+                                          Developed in 2020					</small>
+                                      </div>
+                                    </div>
+                                
+                              <a class="btn btn-sm btn-primary" href="#carousel-example-generic" data-slide="prev"><i class="fa fa-chevron-circle-left"></i> PREV
+                              </a>
+                              <a class="btn btn-sm btn-primary" href="#carousel-example-generic" data-slide="next">
+                                NEXT <i class="fa fa-chevron-circle-right"></i>
+                              </a>
+                            </div>
+                            <!-- End Carousel Card -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Profile Tabs -->
+              </div>
+            </div>
+            <hr  style="margin-top: 30px;">
+            <div class="section landing-section">
+              <div class="text-center">
+                <h3>Kontak</h3>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-7">
+                  <div class="">
+                      <!-- <h4 class="description">If you need me, feel free to send me a message and I will respond your message as soon as possible</h4> -->
+                      <br><br>
+                  </div>  
+                  <div style="margin-top: 10px;">
+                    <table class="table-padding hidden-xs hidden-sm" >
+                      <tr>
+                        <td class="icon"><div class="icon-box"><a href="mailto:misbahulkhoir097@gmail.com"><i class="fa fa-envelope" style="color: white;"></i></a></div></td>
+                        <td><a href="mailto:misbahulkhoir097@gmail.com"><b style="color: #3c8dbc;">Email </b></a> &nbsp;&nbsp;misbahulkhoir097gmail.com</td>
+                      </tr>
+                      <tr>
+                        <td class="icon"><div class="icon-box"><a href='tel:+628557997782'><i class="fa fa-phone" style="color: white;"></i></a></div></td>
+                        <td><a href='tel:+628557997782'><b style="color: #3c8dbc;">Telp </b></a>&nbsp;&nbsp;(+62) 855-7997-782</td>
+                      </tr>
+                      <tr>
+                        <td class="icon"><div class="icon-box"><a href="https://api.whatsapp.com/send?phone=628557997782"><i class="fa fa-whatsapp" style="color: white;"></i></a></div></td>
+                        <td><a href="https://api.whatsapp.com/send?phone=628557997782"><b style="color: #3c8dbc;">Whatsapp </b></a> &nbsp;&nbsp;(+62) 855-7997-782</td>
+                      </tr>
+                      <tr>
+                        <td class="icon"><div class="icon-box"><i class="fa fa-map"></i></div></td>
+                        <td><b style="color: #3c8dbc;">Alamat</b>&nbsp;&nbsp;Batu jaya timur RT 006/006 Kel. Batujaya Kec. Batuceper Kota Tangerang 15121</td>
+                      </tr>
+                    </table>
+                    <table class="table-padding visible-xs visible-sm">
+                      <tr>
+                        <td class="icon"><div class="icon-box"><a href="mailto:misbahulkhoir097@gmail.com"><i class="fa fa-envelope" style="color: white;"></i></a></div></td>
+                        <td><a href="mailto:misbahulkhoir097@gmail.com"><b style="color: #3c8dbc;">Email </b></a> &nbsp;&nbsp;misbahulkhoir097gmail.com</td>
+                      </tr>
+                      <tr>
+                        <td class="icon"><div class="icon-box"><a href='tel:+628557997782'><i class="fa fa-phone" style="color: white;"></i></a></div></td>
+                        <td><a href='tel:+628557997782'><b style="color: #3c8dbc;">Telp </b></a>&nbsp;&nbsp;(+62) 855-7997-782</td>
+                      </tr>
+                      <tr>
+                        <td class="icon"><div class="icon-box"><a href="https://api.whatsapp.com/send?phone=628557997782"><i class="fa fa-whatsapp" style="color: white;"></i></a></div></td>
+                        <td><a href="https://api.whatsapp.com/send?phone=628557997782"><b style="color: #3c8dbc;">Whatsapp </b></a> &nbsp;&nbsp;(+62) 855-7997-782</td>
+                      </tr>
+                      <tr>
+                        <td class="icon"><div class="icon-box"><i class="fa fa-map"></i></div></td>
+                        <td><b style="color: #3c8dbc;">Alamat</b>&nbsp;&nbsp;Batu jaya timur RT 006/006 Kel. Batujaya Kec. Batuceper Kota Tangerang 15121</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-5">
+                  <h4 class="text-center description">Submit Your Criticism and Suggestions</h4>
+                  <br>
+               
+
+                  <form action="https://postmail.invotes.com/send" method="post" id="email_form" class="contact-form">
+                    <div class="row">
+                        <div class="col-md-6">
+                        <div class="form-group label-floating">
+                            <label class="control-label">Subject</label>
+                            <input type="text" name="subject" class="form-control">
+                        </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group label-floating">
+                            <label class="control-label">Email</label>
+                            <input type="text" name="reply_to" class="form-control">
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="form-group label-floating">
+                        <label class="control-label">Your Message</label>
+                        <textarea class="form-control" name="text" rows="4"></textarea>
+                    </div>
+                    <input type="hidden" name="access_token" value="meptdly9lvyz9sc3gwty5ypa" />
+                    
+                    <input type="hidden" name="success_url" value=".myportfolio?message=Email+Successfully+Sent%21&isError=0" />
+                    <input type="hidden" name="error_url" value=".myportfolio?message=Email+could+not+be+sent.&isError=1" />
+    
+                    <input id="submit_form" type="submit" value="Send" style="background-color:#3c8dbc;" class="btn btn-raised"/>
+                   
+                </form>
+                </div>
+              </div>
+            </div>      
+          </div>
+          <a id="tombolScrollTop" onclick="scrolltotop()"><img style="margin-left:4px;margin-top:2px;" width="25px" src="img/back-to-top-arrow-white.png"></a>
+    </div>
+  </div>
+  
+  <footer class="footer">
+    <div class="container">
+        <nav class="pull-left">
+          <ul>
+            <li>
+            <a style="color:#3c8dbc;" rel="tooltip" title="Follow me on Twitter" data-placement="top" href="https://twitter.com/qbot_sista" target="_blank" class="btn btn-white btn-simple btn-just-icon">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a style="color:#3c8dbc;" rel="tooltip" title="Follow me on Instagram" data-placement="top" href="https://www.instagram.com/qbot_sista" target="_blank" class="btn btn-white btn-simple btn-just-icon">
+              <i class="fa fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a style="color:#3c8dbc;" rel="tooltip" title="See me on Facebook" data-placement="top" href="https://www.facebook.com/qbotsista" target="_blank" class="btn btn-white btn-simple btn-just-icon">
+              <i class="fa fa-facebook-square"></i>
+            </a>
+          </li>
+          <li>
+            <a style="color:#3c8dbc;" rel="tooltip" title="See me on LinkedIn" data-placement="top" href="https://www.linkedin.com/in/misbahul-khoir-s-kom-3b3939169" target="_blank" class="btn btn-white btn-simple btn-just-icon">
+              <i class="fa fa-linkedin-square"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="copyright pull-right">
+            Copyright &copy; 2017 <a href="https://www.linkedin.com/in/misbahul-khoir-s-kom-3b3939169" target="_blank">MISBAHUL KHOIR</a></strong> All rights reserved.
+      </div>
+    </div>
+  </footer>
+</body>
+  <!--   Core JS Files   -->
+  <script src="js/jquery.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="js/material.min.js"></script>
+
+  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+  <script src="js/nouislider.min.js" type="text/javascript"></script>
+
+  <!--  Plugin for the Datepicker, full documentation here: http://www.eyecon.ro/bootstrap-datepicker/ -->
+  <script src="js/bootstrap-datepicker.js" type="text/javascript"></script>
+
+  <!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
+  <script src="js/material-kit.js" type="text/javascript"></script>
+
+  <script src="js/pace.min.js"></script>
+
+
+
+  <script>
+    $(document).ajaxStart(function() { Pace.restart(); });
+      $('.ajax').click(function(){
+          $.ajax({url: '#', success: function(result){
+              $('.ajax-content').html('<hr>Ajax Request Completed !');
+          }});
+      });
+
+      $(document).ready(function(){
+        $(window).scroll(function(){
+          if ($(window).scrollTop() > 100) {
+            $('#tombolScrollTop').fadeIn();
+          } else {
+            $('#tombolScrollTop').fadeOut();
+          }
+        });
+      });
+
+      function scrolltotop()
+      {
+        $('html, body').animate({scrollTop : 0},500);
+      }
+  </script>
+    <script>
+    var submitButton = document.getElementById("submit_form");
+    var form = document.getElementById("email_form");
+    form.addEventListener("submit", function (e) {
+        setTimeout(function() {
+            submitButton.value = "Sending...";
+            submitButton.disabled = true;
+        }, 1);
+    });
+</script> 
+<script type="text/javascript">
+            var urlParams;
+            (window.onpopstate = function () {
+                var match,
+                        pl     = /\+/g,  // Regex for replacing addition symbol with a space
+                        search = /([^&=]+)=?([^&]*)/g,
+                        decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+                        query  = window.location.search.substring(1);
+
+                urlParams = {};
+                while (match = search.exec(query))
+                    urlParams[decode(match[1])] = decode(match[2]);
+            })();
+
+            $(function () {
+                $('#tabs').tab();
+
+                if(urlParams['message']) {
+                    console.log(urlParams["iserror"]);
+                    if(urlParams["isError"] === "1") {
+                        $(".alert").addClass("alert-danger");
+                    } else {
+                        $(".alert").addClass("alert-success");
+                    }
+
+                    var message = urlParams['message'];
+                    $(".alert").text(message);
+                }
+            });
+    </script>
+
+   
+</html>

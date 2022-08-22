@@ -86,6 +86,7 @@
       </div>
     </div>
 <!-- end bootstrap model -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script type="text/javascript">
  $(document).ready(function($){
     $.ajaxSetup({
@@ -161,6 +162,7 @@
         });
     });
 });
+
 </script>
 </body>
 </html>
